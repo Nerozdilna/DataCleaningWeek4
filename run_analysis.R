@@ -1,6 +1,5 @@
 # Step_1
 # Preparation of dataset folder
-setwd("datacleaning") # This is a folder to save my project in
 fileurl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 #Downloading dataset zip from provided url
 download.file(fileurl, "./assignment.zip") 
