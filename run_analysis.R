@@ -1,11 +1,11 @@
 ### Step_1
 ### Preparation of dataset folder
 fileurl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-### Downloading dataset zip from provided url
+#Downloading dataset zip from provided url
 download.file(fileurl, "./assignment.zip") 
 ### Unzipping provided files/folders
 unzip("assignment.zip", exdir = ".") 
-### Folder "UCI HAR Dataset" is ready for data cleaning  
+# Folder "UCI HAR Dataset" is ready for data cleaning  
 
 ### Step_2
 ### Reading subject codes, activity labels and observation files from "test" subfolder, and merging three pieces into one dataset
@@ -44,16 +44,16 @@ features <- stri_read_lines("./UCI HAR Dataset/features.txt")
 ### To make header look tidier, we will remove 1:561 indices from variable names 
 features_string <- c(stri_sub(features[1:9], 3), stri_sub(features[10:99], 4), stri_sub(features[100:561], 5))
 
-### completedataset table gets headers
+### We will now provide headers to completedataset
 names(completedataset) <- c("subject", "activitycode", features_string)
 
 ### Search is applied on features_string to find variables that contain mean() and std(). 
 ### Note: this search eliminates variables that contain meanFreq().
 ### The resulting object is an integer vector  
-string_filtered <- sort(c(grep("\\bmean()\\b", features_string), grep("\\bstd()\\b", features_string)))  
+string_filtered <- sort(c(grep("\\bmean()\\b", features_string), grep("\\bstd()\\b", features_string))) + 2 
 
 ### completedataset table gets filter applied.
-filterdataset <- completedataset[ ,string_filtered]
+filterdataset <- completedataset[ ,c(1:2, string_filtered)]
 ### Now filterdataset contains only the measurements on the mean and std for each measurement
 
 ### Step_5
