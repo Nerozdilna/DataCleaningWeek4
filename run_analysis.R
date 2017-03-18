@@ -1,5 +1,6 @@
 ### Step_1
 ### Preparation of dataset folder
+
 fileurl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 #Downloading dataset zip from provided url
 download.file(fileurl, "./assignment.zip") 
@@ -18,7 +19,6 @@ obs_test <- read.table("./UCI HAR Dataset/test/X_test.txt", header= FALSE)
 ### This is a set of observations with dimentions 2947 by 561
 
 ### We will now merge above datasets
-
 test <- cbind(subject_test, label_test, obs_test)
 
 ### Step_3
@@ -30,7 +30,6 @@ obs_train <- read.table("./UCI HAR Dataset/train/X_train.txt", header= FALSE)
 train <- cbind(subject_train, label_train, obs_train)
 
 ### Merging two subsets
-
 completedataset <- rbind(test, train)
 ### This resulting dataset has dimentions of 10299 by 563.
 
@@ -63,7 +62,6 @@ summarised <- aggregate(filterdataset[ ,3:66], list(filterdataset$subject, filte
 ### Note: [3:69] subsetting is conducted because first two columns of dataset are summarizing factors for this data summary
 
 summarised <- dplyr::rename(summarised, subject = Group.1, activitycode = Group.2)
-
 ### Renaming gives titles to first two columns.
 
 ### Step_6
