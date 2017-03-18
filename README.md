@@ -17,4 +17,4 @@ Variable value names had to be imported from a separate file (features.txt) and 
 
 The resulting table is a summary of "mean value" statistics on all observations (which totalled 10299) and selected variables (see above), factored by activity description and subject code. Note: activity descriptions were pulled from a separate txt file and merged with a summarised dataset. 
 
-Received summarised dataset has 180 rows which contain a combination of 6 activities for 30 subjects, and "mean value" summaries for observations on 64 variables.
+Received summarised dataset has 180 rows which contain a combination of 6 activities for 30 subjects, and "mean value" summaries for observations on 64 variables (32 for mean() and std() each).
