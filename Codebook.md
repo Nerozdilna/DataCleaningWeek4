@@ -11,23 +11,23 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ 
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+* tBodyAcc-XYZ 
+* tGravityAcc-XYZ
+* tBodyAccJerk-XYZ
+* tBodyGyro-XYZ
+* tBodyGyroJerk-XYZ
+* tBodyAccMag
+* tGravityAccMag
+* tBodyAccJerkMag
+* tBodyGyroMag
+* tBodyGyroJerkMag
+* fBodyAcc-XYZ
+* fBodyAccJerk-XYZ
+* fBodyGyro-XYZ
+* fBodyAccMag
+* fBodyAccJerkMag
+* fBodyGyroMag
+* fBodyGyroJerkMag
 
 ### Manipulations described (new)
 
@@ -35,8 +35,8 @@ Original data (described above) was split into "test" and "train" sections with 
 
 Raw data originally contained 18 sets of variables. Also, it contained additional vectors obtained by averaging the signals. For the purpose of this analysis, a set of variables that were estimated from recorded signals was litimed only to:
 
-mean(): Mean value
-std(): Standard deviation
+* mean(): Mean value
+* std(): Standard deviation
 
 66 variables were left for further analysis. Out of 17 sygnals, 8 sygnals have 6 variables each, and 9 sygnals have 2 variables each. Note: meanFreq() was excluded from this analysis
 
@@ -45,8 +45,8 @@ std(): Standard deviation
 Summarised data calculated mean values for 10299 ovservations, and the summarising factors were a) activity description, b) volunteer number(code)
 
 Names for summarised dataset were derived from features.txt file with following changes:
-a) Indices were dropped
-b) "BodyBody"" for fBodyGyroJerkMag sygnal was changed to "Body" to relate it to name in original info about featurers.
+* Indices were dropped
+* "BodyBody"" for fBodyGyroJerkMag sygnal was changed to "Body" to relate it to name in original info about featurers.
 
 Names of first three columns are:
 activitycode - For code of volunteer activities (1 to 6)
