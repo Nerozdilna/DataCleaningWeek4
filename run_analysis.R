@@ -10,8 +10,8 @@ unzip("assignment.zip", exdir = ".")
 ### Step_2
 ### Reading subject codes, activity labels and observation files from "test" subfolder, and merging three pieces into one dataset
 
-subject_test <- read.table("./UCI HAR Dataset/test/subject_test.txt", header= FALSE) ### Subjects vary from 1 to 30, dimention of this set is 2947 by 1
-### Subject codes vary from 1 to 30, dimention of this set is 2947 by 1
+subject_test <- read.table("./UCI HAR Dataset/test/subject_test.txt", header= FALSE) 
+### Subjects vary from 1 to 30, dimention of this set is 2947 by 1
 label_test <- read.table("./UCI HAR Dataset/test/y_test.txt", header= FALSE)
 ### Activity labels vary from 1 to 6, dimention of this set is also 2947 by 1
 obs_test <- read.table("./UCI HAR Dataset/test/X_test.txt", header= FALSE)
