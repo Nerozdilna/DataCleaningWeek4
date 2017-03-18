@@ -1,14 +1,14 @@
 ### DataCleaningWeek4 folder contains:  
-* a) This readme.md file;  
-* b) run_analysis.R script with step by step descriptions on how data from Week 4 assignment was read/manipulated/summarized;
-* c) Codebook to describe variables in summarised dataset (saved and submitted as summarised_done.txt)
+* This readme.md file;  
+* run_analysis.R script with step by step descriptions on how data from Week 4 assignment was read/manipulated/summarized;
+* Codebook to describe variables in summarised dataset (saved and submitted as summarised_done.txt)
 
 In this assignment, we have been provided an url link to a zip file which had to be unzipped into a folder on local working directory.
  
-This folder contains two subfolders with similar txt files for 
-* a) Observations measures on 561 variables; 
-* b) Subjects (persons who were providing observations), 30 in total
-* c) Activities for subjects which were of 6 different types
+This folder contains two subfolders with similar txt files for: 
+* Observations measures on 561 variables; 
+* Subjects (persons who were providing observations), 30 in total
+* Activities for subjects which were of 6 different types
 
 Two subforders are "test" and "train" which were eventually merged into a single dataset.
 
