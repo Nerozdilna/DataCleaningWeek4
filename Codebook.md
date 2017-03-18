@@ -49,6 +49,6 @@ Names for summarised dataset were derived from features.txt file with following 
 * "BodyBody"" for fBodyGyroJerkMag sygnal was changed to "Body" to relate it to name in original info about featurers.
 
 Names of first three columns are:
-activitycode - For code of volunteer activities (1 to 6)
-act_description - Acitivity described (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
-subject - Volunteer number (code)
+* activitycode - For code of volunteer activities (1 to 6)
+* act_description - Acitivity described (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+* subject - Volunteer number (code)
