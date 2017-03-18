@@ -1,7 +1,7 @@
 ### DataCleaningWeek4 folder contains:  
 * This readme.md file;  
 * run_analysis.R script with step by step descriptions on how data from Week 4 assignment was read/manipulated/summarized;
-* Codebook to describe variables in summarised dataset (saved and submitted for reviwing as summarised_done.txt)
+* Codebook to describe variables in summarised dataset (saved and submitted for reviewing as summarised_done.txt)
 
 In this assignment, we have been provided an url link to a zip file which had to be unzipped into a folder on local working directory.
  
